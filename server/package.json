@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "mkdir -p dist && cp -r index.js package.json .env dist/"
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
