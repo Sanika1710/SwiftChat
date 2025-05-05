@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  /* Dark theme variables */
+  --dark-background: #131324;
+  --dark-container-bg: #00000076;
+  --dark-secondary-bg: #080420;
+  --dark-tertiary-bg: #0d0d30;
+  --dark-input-bg: #ffffff34;
+  --dark-text: #ffffff;
+  --dark-text-secondary: #d1d1d1;
+  --dark-text-muted: #ffffff99;
+  --dark-accent: #4e0eff;
+  --dark-accent-hover: #3c0edc;
+  --dark-accent-light: #9a86f3;
+  --dark-message-sent: #4f04ff21;
+  --dark-message-received: #9900ff20;
+  --dark-scrollbar-thumb: #ffffff39;
+  --dark-border: #ffffff34;
+  --dark-success: #4caf50;
+  --dark-error: #f44336;
+  --dark-warning: #ff9800;
+  --dark-info: #2196f3;
+
+  /* Light theme variables */
+  --light-background: #f5f7fb;
+  --light-container-bg: #ffffff;
+  --light-secondary-bg: #edf2f7;
+  --light-tertiary-bg: #e2e8f0;
+  --light-input-bg: #edf2f7;
+  --light-text: #2d3748;
+  --light-text-secondary: #4a5568;
+  --light-text-muted: #718096;
+  --light-accent: #4e0eff;
+  --light-accent-hover: #3c0edc;
+  --light-accent-light: #9a86f3;
+  --light-message-sent: #e9ecef;
+  --light-message-received: #e3f2fd;
+  --light-scrollbar-thumb: #cbd5e0;
+  --light-border: #e2e8f0;
+  --light-success: #4caf50;
+  --light-error: #f44336;
+  --light-warning: #ff9800;
+  --light-info: #2196f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* Dark theme styles */
+.dark-theme {
+  --bg-color: var(--dark-background);
+  --container-bg: var(--dark-container-bg);
+  --secondary-bg: var(--dark-secondary-bg);
+  --tertiary-bg: var(--dark-tertiary-bg);
+  --input-bg: var(--dark-input-bg);
+  --text-color: var(--dark-text);
+  --text-secondary: var(--dark-text-secondary);
+  --text-muted: var(--dark-text-muted);
+  --accent-color: var(--dark-accent);
+  --accent-hover: var(--dark-accent-hover);
+  --accent-light: var(--dark-accent-light);
+  --message-sent: var(--dark-message-sent);
+  --message-received: var(--dark-message-received);
+  --scrollbar-thumb: var(--dark-scrollbar-thumb);
+  --border-color: var(--dark-border);
+  --success-color: var(--dark-success);
+  --error-color: var(--dark-error);
+  --warning-color: var(--dark-warning);
+  --info-color: var(--dark-info);
+}
+
+/* Light theme styles */
+.light-theme {
+  --bg-color: var(--light-background);
+  --container-bg: var(--light-container-bg);
+  --secondary-bg: var(--light-secondary-bg);
+  --tertiary-bg: var(--light-tertiary-bg);
+  --input-bg: var(--light-input-bg);
+  --text-color: var(--light-text);
+  --text-secondary: var(--light-text-secondary);
+  --text-muted: var(--light-text-muted);
+  --accent-color: var(--light-accent);
+  --accent-hover: var(--light-accent-hover);
+  --accent-light: var(--light-accent-light);
+  --message-sent: var(--light-message-sent);
+  --message-received: var(--light-message-received);
+  --scrollbar-thumb: var(--light-scrollbar-thumb);
+  --border-color: var(--light-border);
+  --success-color: var(--light-success);
+  --error-color: var(--light-error);
+  --warning-color: var(--light-warning);
+  --info-color: var(--light-info);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  width: 0.1rem;
+  border-radius: 1rem;
+}
+
+/* Toast styling */
+.Toastify__toast-theme--dark {
+  background-color: var(--container-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.Toastify__toast-theme--light {
+  background-color: var(--container-bg) !important;
+  color: var(--text-color) !important;
+}
